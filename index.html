@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptography Calculator</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mb-5">Crypotography Calculator</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-3">//A = g^a mod p</div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="g" id="g1" />
+            <span class="input-group-text">^</span>
+            <input type="text" class="form-control" placeholder="a" id="a1" />
+            <span class="input-group-text">%</span>
+            <input type="text" class="form-control" placeholder="p" id="p1" />
+            <span class="input-group-text">=</span>
+            <input
+              type="text"
+              class="form-control bg-dark text-white font-weight-bolder"
+              id="A1"
+              disabled
+            />
+          </div>
+
+          <button id="form1" class="btn btn-primary">Calculate</button>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">//s = B ^ a mod p</div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="B" id="b2" />
+            <span class="input-group-text">^</span>
+            <input type="text" class="form-control" placeholder="a" id="a2" />
+            <span class="input-group-text">%</span>
+            <input type="text" class="form-control" placeholder="p" id="p2" />
+            <span class="input-group-text">=</span>
+            <input
+              type="text"
+              class="form-control bg-dark text-white font-weight-bolder"
+              id="S2"
+              disabled
+            />
+          </div>
+
+          <button id="form2" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js">
+      
+
+    </script>
+  </body>
+</html>
