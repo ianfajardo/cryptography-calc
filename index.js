@@ -1,13 +1,18 @@
 //calculating script
 
-      $("#a1").keyup(function() {
-        var a1 = parseInt($("#a1").val());
-        $(".a-input").val(a1);
-      });
-
       $("#p1").keyup(function() {
         var p1 = parseInt($("#p1").val());
         $(".p-input").val(p1);
+      });
+
+      $("#g1").keyup(function() {
+        var g1 = parseInt($("#g1").val());
+        $(".g-input").val(g1);
+      });
+
+      $("#a1").keyup(function() {
+        var a1 = parseInt($("#a1").val());
+        $(".a-input").val(a1);
       });
 
       //on calculate click

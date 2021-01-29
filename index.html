@@ -19,18 +19,16 @@
           <h1 class="mb-5">Diffie Hellman Calculator</h1>
         </div>
       </div>
+
       <div class="row mb-5">
-        <div class="col-6">
-          <div class="input-group">
-            <span class="input-group-text">a</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="a"
-              id="a1"
-              style="width: 150px"
-            />
-          </div>
+        <div class="col-12">
+          <h2 class="mb-1">Base and Modulus</h2>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">(pronounced maw-juh-lus)</div>
+        </div>
+        <div class="col-12">
+          <h4 class="mb-3">Numbers we agree on publicly (out in the open for everyone to see)</h4>
         </div>
         <div class="col-6">
           <div class="input-group">
@@ -44,13 +42,58 @@
             />
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-6">
-          <div class="mb-3">//A = g^a mod p</div>
+          <div class="input-group">
+            <span class="input-group-text">g</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="g"
+              id="g1"
+              style="width: 150px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2 class="mb-3">Your Secret Key</h2>
+        </div>
+        <div class="col-12">
+          <h4 class="mb-3">Pick a secret number and enter it here</h4>
+        </div>
+        <div class="col-12">
+          <h6 class="mb-3">Remember it's YOUR secret! Don't share with anyone - not even your partner!</h6>
+        </div>
+        <div class="col-6">
+          <div class="input-group">
+            <span class="input-group-text">Your Secret Number (a)</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="a"
+              id="a1"
+              style="width: 150px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2 class="mb-3">Your Public Key</h2>
+        </div>
+        <div class="col-12">
+          <h4 class="mb-3">Click "Calculate" to figure out your public key</h4>
+        </div>
+        <div class="col-6 mb-3">
 
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="g" id="g1" />
+            <input 
+              type="text" 
+              class="form-control g-input" 
+              placeholder="g" 
+              disabled/>
             <span class="input-group-text">^</span>
             <input
               type="text"
@@ -76,9 +119,22 @@
 
           <button id="form1" class="btn btn-primary">Calculate</button>
         </div>
-        <div class="col-6">
-          <div class="mb-3">//s = B ^ a mod p</div>
+        <div class="col-12">
+          <h6>This is your public key! Share this number in the chat! It's ok if everyone sees this number.</h6>
+        </div>
+      </div>
 
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2 class="mb-3">Your Shared Key</h2>
+        </div>
+        <div class="col-12">
+          <h4 class="mb-3">Click calculate to figure out your partner's and your shared key</h4>
+        </div>
+        <div class="col-12">
+          <h6 class="mb-3">Replace "B" with your partner's Public Key</h6>
+        </div>
+        <div class="col-6 mb-3">
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="B" id="b2" />
             <span class="input-group-text">^</span>
@@ -105,6 +161,9 @@
           </div>
 
           <button id="form2" class="btn btn-primary">Calculate</button>
+        </div>
+        <div class="col-12">
+          <h6>This is your shared PRIVATE key. You and your partner should get the same number!</h6>
         </div>
       </div>
     </div>
